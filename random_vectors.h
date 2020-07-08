@@ -13,7 +13,7 @@
 
 class random_vectors {
 public:
-    int generate();
+    void generate();
 };
 
 

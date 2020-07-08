@@ -8,7 +8,7 @@ int main() {
     data0 data;
     int i = data.generate();
     random_vectors vectors;
-    int j = vectors.generate();
+    vectors.generate();
     std::ofstream f1;
     std::ofstream f2;
     std::ofstream f3;
