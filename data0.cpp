@@ -17,7 +17,7 @@ int data0::generate() {
             if (i != 62)
             s[i] = ' ';
         }
-        std::cout << s;
+        //std::cout << s;
         if (s.substr(0, 11) == "0 0 0 0 0 0" && s.substr(41, 21) == "0 0 0 0 0 1 0 0 0 0 0" ||
             s.substr(0, 11) == "0 0 0 0 0 0" && s.substr(41, 21) == "0 0 0 0 0 1 0 0 0 0 1" ||
             s.substr(0, 11) == "0 0 0 0 0 0" && s.substr(41, 21) == "0 0 0 0 0 1 0 0 0 1 0" ||

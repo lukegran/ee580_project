@@ -3,13 +3,16 @@
 #include <ctime>
 #include <random>
 #include "data0.h"
+#include "random_vectors.h"
 int main() {
     data0 data;
     int i = data.generate();
+    random_vectors vectors;
+    int j = vectors.generate();
     std::ofstream f1;
     std::ofstream f2;
     std::ofstream f3;
-    std::ofstream rv;
+    //std::ofstream rv;
     std::ofstream y2;
     std::ofstream y3;
     f1.open("data1.txt");
@@ -17,14 +20,14 @@ int main() {
     f3.open("data3.txt");
     y2.open("y2.txt");
     y3.open("y3.txt");
-    rv.open("random_vectors.txt");
+    //rv.open("random_vectors.txt");
     std::mt19937 my_rand(time(0));
     //---------Random Vectors---------//
-    for (int i = 0; i < 320; i++) {
-        for (int j = 0; j < 32; j++) 
-            rv << my_rand() % 2 << ' ';
-        rv << std::endl;
-    }
+//    for (int i = 0; i < 800; i++) {
+//        for (int j = 0; j < 32; j++)
+//            rv << my_rand() % 2 << ' ';
+//        rv << std::endl;
+//    }
     //---------------2----------------//
     for (int j = 0; j < 5100; j++)
         y2 << 2 << ' ';
